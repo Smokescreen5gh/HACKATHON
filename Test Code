@@ -1,1 +1,6 @@
-
+def my_function():
+    import random
+    a = print(random.randint(0,100))
+    b = print(random.randint(0,100))
+    
+my_function()
