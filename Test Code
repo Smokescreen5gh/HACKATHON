@@ -1,6 +1,131 @@
-def my_function():
-    import random
-    a = print(random.randint(0,100))
-    b = print(random.randint(0,100))
+
+def subtract_function():
     
-my_function()
+    count = 0;
+    while count < 30:
+        import random
+        a = (random.randint(0,50))
+        b = (random.randint(0,50))
+        if a > b:
+            c = a - b
+            text = " What is the value {} - {} ?"
+            num = int(input(text.format(a, b)))
+            if num == c:
+                count +=1 # count has to be outside the function
+            else:
+                count -=1
+        elif b > a:
+            c = b - a
+            text = " What is the value of  {} - {} ?"
+            num = int(input(text.format(b, a)))
+            if num == c:
+                count +=1 # count has to be outside the function
+            else:
+                count -=1
+        else :
+            c = 0;
+            text = " What is the value {} - {} ?"
+            num = int(input(text.format(a, b)))
+            if num == c:
+                count +=1 # count has to be outside the function
+            else:
+                count -=1
+    while count < 40:
+        import random
+        a = (random.randint(0,100))
+        b = (random.randint(0,100))
+        if a > b:
+            c = a - b
+            text = " What is the value {} - {} ?"
+            num = int(input(text.format(a, b)))
+            if num == c:
+                count +=1 # count has to be outside the function
+            else:
+                count -=1
+        elif b > a:
+            c = b - a
+            text = " What is the value of  {} - {} ?"
+            num = int(input(text.format(b, a)))
+            if num == c:
+                count +=1 # count has to be outside the function
+            else:
+                count -=1
+        else :
+            c = 0;
+            text = " What is the value {} - {} ?"
+            num = int(input(text.format(a, b)))
+            if num == c:
+                count +=1 # count has to be outside the function
+            else:
+                count -=1
+subtract_function()
+
+
+def multiply_function():
+        
+    count = 30;
+    while count < 40:
+        import random
+        a = (random.randint(5,12))
+        b = (random.randint(5,12))
+        c = a * b
+        text = " What is the product of {} and {} ?"
+        num = int(input(text.format(a, b)))
+        if num == c:
+            count +=1 # count has to be outside the function
+        else:
+            count -=1
+        x = "Your current points:{}"
+        print(x.format(count))
+    while count < 40:
+        import random
+        a = (random.randint(5,12))
+        b = (random.randint(5,12))
+        c = a * b
+        text = " What is the product of {} and {} ?"
+        num = int(input(text.format(a, b)))
+        if num == c:
+            count +=1 # count has to be outside the function
+        else:
+            count -=1
+        x = "Your current points:{}"
+        print(x.format(count))
+multiply_function()
+
+
+def add_function():
+    
+    count = 0;
+    while count < 4:
+        import random
+        a = (random.randint(0,50))
+        b = (random.randint(0,50))
+        c = a + b
+        text = " What is the sum of {} and {} ? "
+        num = int(input(text.format(a, b)))
+        if num == c:
+            count +=1 # count has to be outside the function
+            print(" That's Correct!")
+        else:
+            count -=1
+            print("incorrect.Try Again")
+        x = "Your current points:{}"
+        print(x.format(count))
+    print(" You have graduated to TRADING. You are on your way to Agriculture.")
+    while count < 8:
+        import random
+        a = (random.randint(0,100))
+        b = (random.randint(0,100))
+        c = a + b
+        text = " What is the sum of {} and {} ? "
+        num = int(input(text.format(a, b)))
+        if num == c:
+            count +=1 # count has to be outside the function
+            print(" That's Correct!")
+        else:
+            count -=1
+            print("incorrect.Try Again")
+        x = "Your current points:{}"
+        print(x.format(count))
+    
+add_function()
