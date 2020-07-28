@@ -1,0 +1,324 @@
+def add_function():
+    r = 1
+    while r==1:
+        
+        count = 0;
+        while count < 4:
+            import random
+            a = (random.randint(0,50))
+            b = (random.randint(0,50))
+            c = float(a + b)
+            text = " What is the sum of {} and {} ? "
+            num = (input(text.format(a, b)))
+            try:
+                if float(num) == c:
+                    count +=1 # count has to be outside the function
+                    print(" That's Correct!")
+                else:
+                    count -=1
+                    print("This is Incorrect. Please Try Again.")
+            except ValueError:
+                while type(num) == str:
+                    print("we are looking for a number, not a word")
+                    r = 2
+                    break
+                if type(num) == float:
+                    print(" the answer is a whole number")
+                    r = 2
+                    break 
+        
+            x = "Your Current Points Are: {}"
+            print(x.format(count))
+            if count < -8:
+                print(" You have too many points incorrect. Please play again")
+                r = 2
+                break
+                
+        
+        
+        print(" You have graduated to TRADING. You are on your way to Agriculture.")
+        while count < 8:
+            import random
+            a = (random.randint(0,100))
+            b = (random.randint(0,100))
+            c = float(a + b)
+            text = " What is the sum of {} and {} ? "
+            num = (input(text.format(a, b)))
+            try:
+                if float(num) == c:
+                    count +=1 # count has to be outside the function
+                    print(" That's Correct!")
+                else:
+                    count -=1
+                    print("This is Incorrect. Please Try Again.")
+            except ValueError:
+                while type(num) == str:
+                    print("we are looking for a number, not a word")
+                    r = 2
+                    break
+                
+                
+                    
+                
+        
+            x = "Your Current Points Are: {}"
+            print(x.format(count))
+            if count < -8:
+                print(" You have too many points incorrect. Please play again")
+                r = 2
+                break
+                
+        
+        
+        print(" You have graduated to Agriculture. You are on your way to Industry.")
+        while count < 12:
+            import random
+            a = (random.randint(0,50))
+            b = (random.randint(0,50))
+            if a > b:
+                c = float(a - b)
+                text = " What is the value {} - {} ?"
+                num = (input(text.format(a, b)))
+                try: 
+                    if float(num) == c:
+                        count +=1 # count has to be outside the function
+                        print(" That's Correct!")
+                    else:
+                        count -=1
+                        print("This is Incorrect. Please Try Again.")
+                except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+                x = "Your Current Points Are: {}"
+                print(x.format(count))
+                if count < -8:
+                    print(" You have too many points incorrect. Please play again")
+                    r = 2
+                    break
+            elif b > a:
+                c = float(b - a)
+                text = " What is the value of  {} - {} ?"
+                num = (input(text.format(b, a)))
+                try:
+                    if float(num) == c:
+                        count +=1 # count has to be outside the function
+                        print(" That's Correct!")
+                    else:
+                        count -=1
+                        print("This is Incorrect. Please Try Again.")
+                except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+                x = "Your Current Points Are: {}"
+                print(x.format(count))
+                if count < -8:
+                    print(" You have too many points incorrect. Please play again")
+                    r = 2
+                    break
+                
+            else :
+                c = 0;
+                text = " What is the value {} - {} ?"
+                num = (input(text.format(a, b)))
+                try:   
+                    if float(num) == c:
+                        count +=1 # count has to be outside the function
+                        print(" That's Correct!")
+                    else:
+                        count -=1
+                        print("This is Incorrect. Please Try Again.")
+                except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+                x = "Your Current Points Are: {}"
+                print(x.format(count))
+                if count < -8:
+                    print(" You have too many points incorrect. Please play again")
+                    r = 2
+                    break
+        print(" You have graduated to Industry. You are on your way to Information Era.")
+        while count < 16:
+            import random
+            a = (random.randint(0,100))
+            b = (random.randint(0,100))
+            if a > b:
+                c = float(a - b)
+                text = " What is the value {} - {} ? "
+                num = (input(text.format(a, b)))
+                try:
+                    if float(num) == c:
+                        count +=1 # count has to be outside the function
+                        print(" That's Correct!")
+                    else:
+                        count -=1
+                        print("This is Incorrect. Please Try Again.")
+                except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+                x = "Your Current Points Are: {} "
+                print(x.format(count))
+                if count < -8:
+                    print(" You have too many points incorrect. Please play again")
+                    r = 2
+                    break
+            elif b > a:
+                c = float(b - a)
+                text = " What is the value of  {} - {} ?"
+                num = (input(text.format(b, a)))
+                try:
+                    if float(num) == c:
+                        count +=1 # count has to be outside the function
+                        print(" That's Correct!")
+                    else:
+                        count -=1
+                        print("This is Incorrect. Please Try Again.")
+                except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+                x = "Your Current Points Are: {} "
+                print(x.format(count))
+                if count < -8:
+                    print(" You have too many points incorrect. Please play again")
+                    r = 2
+                    break
+            else :
+                c = 0;
+                text = " What is the value {} - {} ?"
+                num = (input(text.format(a, b)))
+                try:
+                    if float(num) == c:
+                        count +=1 # count has to be outside the function
+                        print(" That's Correct!")
+                    else:
+                        count -=1
+                        print("This is Incorrect. Please Try Again.")
+                except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+                x = "Your Current Points Are: {} "
+                print(x.format(count))
+                if count < -8:
+                    print(" You have too many points incorrect. Please play again")
+                    r = 2
+                    break
+        
+        
+        print(" You have graduated to Information Era. You are on your way to Data Era.")
+        while count < 20:
+            import random
+            a = (random.randint(5,12))
+            b = (random.randint(5,12))
+            c = float(a * b)
+            text = " What is the product of {} and {} ?"
+            num = (input(text.format(a, b)))
+            try:
+                if float(num) == c:
+                    count +=1 # count has to be outside the function
+                    print(" That's Correct!")
+                else:
+                    count -=1
+                    print("This is Incorrect. Please Try Again.")
+            except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+            x = "Your Current Points Are: {} "
+            print(x.format(count))
+            if count < -8:
+                print(" You have too many points incorrect. Please play again")
+                r = 2
+                break
+        
+        
+        print(" You have graduated to Data Era. You are on your way to Space Exploration Era.")
+        while count <24:
+            import random
+            a = (random.randint(5,12))
+            b = (random.randint(5,12))
+            c = float(a * b)
+            text = " What is the product of {} and {} ?"
+            num = (input(text.format(a, b)))
+            try:
+                if float(num) == c:
+                    count +=1 # count has to be outside the function
+                    print(" That's Correct!")
+                else:
+                    count -=1
+                    print("This is Incorrect. Please Try Again.")
+            except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+            x = "Your Current Points Are: {} "
+            print(x.format(count))
+            if count < -8:
+                print(" You have too many points incorrect. Please play again")
+                r = 2
+                break
+        
+        
+        print(" You have graduated to Space Exploration. Next step: Space Exploration Era.")
+        while count < 28:
+            import random
+            a = (random.randint(0,100))
+            b = (random.randint(0,100))
+            try:
+                if a > b:
+                    while ((a % b) != 0):
+                         b-=1
+                    c = (a / b)
+                elif b > a:
+                    while ((b % a) != 0):
+                         a-=1
+                    c = (b / a)
+            except ZeroDivisionError:
+                a = 6
+                b = 3
+            
+            if a > b:
+                text = " What is the value of {} divided by {} ?"
+                num = (input(text.format(a, b)))
+            elif b > a:
+                text = " What is the value of {} divided by {} ?"
+                num = (input(text.format(b, a)))
+            try:
+                if float(num) == c:
+                    count +=1 # count has to be outside the function
+                    print(" That's Correct!")
+                else:
+                    count -=1
+                    print("This is Incorrect. Please Try Again.")
+            except ValueError:
+                    while type(num) == str:
+                        print("we are looking for a number, not a word")
+                        r = 2
+                        break
+        
+            x = "Your Current Points Are: {} "
+            print(x.format(count))
+            if count < -8:
+                print(" You have too many points incorrect. Please play again")
+                r = 2
+                break
+                
+            
+        
+        print("CONGRATULATIONS!! WELCOME TO THE FUTURE! YOU HAVE REACHED THE END OF THE GAME. YOU ARE NOW A PART OF A NEW WORLD, FILLED WITH NEW INNOVATIONS AND DESIGNS. YOU CAN BE EVERYTHING YOU’VE EVER WANTED TO BE!! DREAM BIG AND ALLOW YOUR CREATIVITY TO INVENT WHATEVER YOU BELIEVE! YOURS TRULY, iEVOLUTION")  
+        break
+        
+        
+add_function()
